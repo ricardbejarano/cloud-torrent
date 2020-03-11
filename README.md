@@ -52,10 +52,7 @@ Available on [Quay](https://quay.io) as:
 ├── downloads/
 └── etc/
     ├── group
-    ├── passwd
-    └── ssl/
-        └── certs/
-            └── ca-certificates.crt
+    └── passwd
 ```
 
 

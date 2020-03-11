@@ -2,18 +2,16 @@ FROM golang:1 AS build
 
 RUN CGO_ENABLED=0 go get -v github.com/jpillora/cloud-torrent
 
-RUN echo "nogroup:*:100:nobody" > /tmp/group && \
-    echo "nobody:*:100:100:::" > /tmp/passwd && \
-    mkdir -p /tmp/downloads
+RUN mkdir -p /rootfs/etc && \
+    cp /go/bin/cloud-torrent /rootfs/ && \
+    echo "nogroup:*:100:nobody" > /rootfs/etc/group && \
+    echo "nobody:*:100:100:::" > /rootfs/etc/passwd && \
+    mkdir -p /rootfs/downloads
 
 
 FROM scratch
 
-COPY --from=build --chown=100:100 /go/bin/cloud-torrent /
-COPY --from=build --chown=100:100 /tmp/downloads /downloads
-COPY --from=build --chown=100:100 /tmp/group \
-                                  /tmp/passwd \
-                                  /etc/
+COPY --from=build --chown=100:100 /rootfs /
 
 USER 100:100
 VOLUME ["/downloads"]
