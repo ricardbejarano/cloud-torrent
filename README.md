@@ -16,7 +16,7 @@ Available on [Docker Hub](https://hub.docker.com) as [`ricardbejarano/cloud-torr
 
 Available on [Quay](https://quay.io) as:
 
-- [`quay.io/ricardbejarano/cloud-torrent-glibc`](https://quay.io/repository/ricardbejarano/cloud-torrent-glibc), tags: [`0.8.25`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/cloud-torrent/blob/master/Dockerfile.glibc) (about `16.8MB`)
+- [`quay.io/ricardbejarano/cloud-torrent`](https://quay.io/repository/ricardbejarano/cloud-torrent), [`quay.io/ricardbejarano/cloud-torrent-glibc`](https://quay.io/repository/ricardbejarano/cloud-torrent-glibc), tags: [`0.8.25`, `master`, `latest` *(Dockerfile.glibc)*](https://github.com/ricardbejarano/cloud-torrent/blob/master/Dockerfile.glibc) (about `16.8MB`)
 - [`quay.io/ricardbejarano/cloud-torrent-musl`](https://quay.io/repository/ricardbejarano/cloud-torrent-musl), tags: [`0.8.25`, `master`, `latest` *(Dockerfile.musl)*](https://github.com/ricardbejarano/cloud-torrent/blob/master/Dockerfile.musl) (about `16.8MB`)
 
 
