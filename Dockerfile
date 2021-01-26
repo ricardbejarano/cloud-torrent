@@ -18,4 +18,4 @@ COPY --from=build --chown=10000:10000 /rootfs /
 USER 10000:10000
 VOLUME ["/downloads"]
 EXPOSE 3000/tcp
-ENTRYPOINT ["/cloud-torrent"]
+ENTRYPOINT ["/bin/cloud-torrent"]
