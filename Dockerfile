@@ -1,7 +1,7 @@
 FROM golang:1-alpine AS build
 
 RUN apk add git && \
-    CGO_ENABLED=0 go get -v github.com/jpillora/cloud-torrent
+    CGO_ENABLED=0 go install -v github.com/jpillora/cloud-torrent@latest
 
 RUN mkdir -p /rootfs/bin && \
       cp /go/bin/cloud-torrent /rootfs/bin/ && \
