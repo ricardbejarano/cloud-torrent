@@ -1,5 +1,5 @@
 <div align="center">
-	<p><img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/apple/325/magnet_1f9f2.png" width="100px"></p>
+	<p><img src="https://em-content.zobj.net/thumbs/160/apple/325/magnet_1f9f2.png" width="100px"></p>
 	<h1>cloud-torrent</h1>
 	<p>Built-from-source container image of <a href="https://github.com/jpillora/cloud-torrent">cloud-torrent</a></p>
 	<code>docker pull quay.io/ricardbejarano/cloud-torrent</code>
